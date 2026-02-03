@@ -7,10 +7,46 @@ export default function BackgroundMusic() {
   const [isPlaying, setIsPlaying] = useState(false)
   const [isMuted, setIsMuted] = useState(false)
   const audioRef = useRef<HTMLAudioElement>(null)
+  const [hasInteracted, setHasInteracted] = useState(false)
 
   useEffect(() => {
     if (audioRef.current) {
       audioRef.current.volume = 0.3
+    }
+
+    // Auto-play saat user pertama kali interact dengan halaman
+    const handleFirstInteraction = () => {
+      if (!hasInteracted && audioRef.current) {
+        audioRef.current.play()
+          .then(() => {
+            setIsPlaying(true)
+            setHasInteracted(true)
+          })
+          .catch((error) => {
+            console.log('Autoplay prevented:', error)
+          })
+      }
+    }
+
+    // Try to autoplay immediately
+    if (audioRef.current) {
+      audioRef.current.play()
+        .then(() => {
+          setIsPlaying(true)
+          setHasInteracted(true)
+        })
+        .catch(() => {
+          // If autoplay is blocked, wait for user interaction
+          window.addEventListener('click', handleFirstInteraction)
+          window.addEventListener('touchstart', handleFirstInteraction)
+          window.addEventListener('scroll', handleFirstInteraction)
+        })
+    }
+
+    return () => {
+      window.removeEventListener('click', handleFirstInteraction)
+      window.removeEventListener('touchstart', handleFirstInteraction)
+      window.removeEventListener('scroll', handleFirstInteraction)
     }
   }, [])
 
