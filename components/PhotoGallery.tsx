@@ -2,10 +2,10 @@ import Image from 'next/image'
 import FadeIn from './FadeIn'
 
 const photos = [
-  { src: '/IMG_0912.JPG', alt: 'Momen pernikahan 1' },
-  { src: '/IMG_2765.JPG', alt: 'Momen pernikahan 2' },
-  { src: '/IMG_2771.JPG', alt: 'Momen pernikahan 3' },
-  { src: '/IMG_2775.JPG', alt: 'Momen pernikahan 4' },
+  { src: '/IMG_0912.JPG', alt: 'Momen pernikahan 1', rotate: false },
+  { src: '/IMG_2765.JPG', alt: 'Momen pernikahan 2', rotate: false },
+  { src: '/IMG_2771.JPG', alt: 'Momen pernikahan 3', rotate: false },
+  { src: '/IMG_2775.JPG', alt: 'Momen pernikahan 4', rotate: false },
 ]
 
 export default function PhotoGallery() {
@@ -23,7 +23,7 @@ export default function PhotoGallery() {
                 src={photo.src}
                 alt={photo.alt}
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
+                className={`object-cover transition-transform duration-700 group-hover:scale-[1.05] ${photo.rotate ? 'rotate-90' : ''}`}
               />
               <div className="absolute inset-0 bg-black/5" />
             </div>

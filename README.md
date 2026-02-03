@@ -92,12 +92,15 @@ Atau connect repository ke Vercel dashboard untuk auto-deployment.
 ## 📝 Kustomisasi
 
 ### Ubah Data Mempelai
+
 Edit file `app/page.tsx` dan `app/invitation/page.tsx`
 
 ### Ubah Warna Tema
+
 Edit file `app/globals.css` di bagian `@theme`
 
 ### Ubah Background Music
+
 Ganti file audio di folder `public/` dan update path di `components/BackgroundMusic.tsx`
 
 ## 📄 License
