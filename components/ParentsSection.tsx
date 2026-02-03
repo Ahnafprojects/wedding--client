@@ -20,27 +20,30 @@ export default function ParentsSection() {
             />
           </div>
         </div>
-        <div className="grid gap-10 md:grid-cols-2">
-          <div className="text-center">
-            <p className="text-xs uppercase tracking-[0.4em] text-soft-gray">Putra dari</p>
-            <p className="mt-4 font-playfair text-xl text-dark-charcoal">Eko Juwanto (Dogles)</p>
-            <p className="text-soft-gray">&</p>
+        <div className="grid gap-10 md:grid-cols-2 md:gap-16">
+          <div className="text-center bg-white/60 rounded-2xl p-8 border border-soft-gold/10">
+            <p className="text-xs uppercase tracking-[0.4em] text-soft-gray mb-6">Putra dari</p>
+            <p className="mt-2 font-playfair text-xl text-dark-charcoal">Eko Juwanto (Dogles)</p>
+            <p className="my-3 text-soft-gold">&</p>
             <p className="font-playfair text-xl text-dark-charcoal">Sumakitdatin</p>
-            <p className="mt-4 text-sm text-soft-gray">
+            <p className="mt-6 text-sm text-soft-gray leading-relaxed">
               Dsn. Sidomulyo, Desa Medowo, Kec. Kandangan, Kab. Kediri
             </p>
           </div>
-          <div className="text-center">
-            <p className="text-xs uppercase tracking-[0.4em] text-soft-gray">Putri dari</p>
-            <p className="mt-4 font-playfair text-xl text-dark-charcoal">Didik Santoso</p>
-            <p className="text-soft-gray">&</p>
+          <div className="text-center bg-white/60 rounded-2xl p-8 border border-soft-gold/10">
+            <p className="text-xs uppercase tracking-[0.4em] text-soft-gray mb-6">Putri dari</p>
+            <p className="mt-2 font-playfair text-xl text-dark-charcoal">Didik Santoso</p>
+            <p className="my-3 text-soft-gold">&</p>
             <p className="font-playfair text-xl text-dark-charcoal">Ratih Wulansari</p>
-            <p className="mt-4 text-sm text-soft-gray">Dsn. Biro, Desa Wonorejo, Kec. Puncu</p>
+            <p className="mt-6 text-sm text-soft-gray leading-relaxed">Dsn. Biro, Desa Wonorejo, Kec. Puncu</p>
           </div>
         </div>
-        <div className="mt-12 text-center">
+        
+        <div className="elegant-divider my-16">✦</div>
+        
+        <div className="text-center">
           <p className="font-playfair text-3xl text-dark-charcoal sm:text-4xl">Bima Putra Eka Wardana</p>
-          <p className="my-3 text-soft-gold">&</p>
+          <p className="my-4 text-2xl text-soft-gold">&</p>
           <p className="font-playfair text-3xl text-dark-charcoal sm:text-4xl">Andhira Lia Wahyu Sadida</p>
         </div>
       </FadeIn>

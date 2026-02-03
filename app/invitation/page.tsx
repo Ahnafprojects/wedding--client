@@ -5,6 +5,7 @@ import InvitationCard from '@/components/InvitationCard'
 import ParentsSection from '@/components/ParentsSection'
 import PhotoGallery from '@/components/PhotoGallery'
 import LocationMap from '@/components/LocationMap'
+import RSVPSection from '@/components/RSVPSection'
 import FadeIn from '@/components/FadeIn'
 
 export default function InvitationPage() {
@@ -25,9 +26,9 @@ export default function InvitationPage() {
           </h1>
           <p className="mt-4 text-sm uppercase tracking-[0.3em] text-soft-gray">Minggu, 8 Februari 2026</p>
           <div className="mt-10">
-            <Link href="/rsvp" className="btn-primary">
+            <a href="#rsvp" className="btn-primary">
               RSVP Sekarang
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -90,9 +91,9 @@ export default function InvitationPage() {
                 Dari Kediri hingga Pare, kami melangkah dengan doa dan restu orang tua. Terima kasih sudah
                 menjadi bagian dari perjalanan ini dan hadir untuk merayakan hari bahagia kami.
               </p>
-              <Link href="/rsvp" className="btn-outline">
+              <a href="#rsvp" className="btn-outline">
                 Konfirmasi Kehadiran
-              </Link>
+              </a>
             </div>
             <div className="relative aspect-[4/5] overflow-hidden rounded-[32px] shadow-[0_30px_70px_rgba(0,0,0,0.15)]">
               <Image
@@ -111,19 +112,7 @@ export default function InvitationPage() {
 
       <LocationMap />
 
-      <section className="section-container">
-        <FadeIn>
-          <div className="rounded-3xl bg-white/80 p-10 text-center shadow-[0_20px_50px_rgba(0,0,0,0.08)]">
-            <h2 className="font-playfair text-3xl text-dark-charcoal sm:text-4xl">Kami Menantikan Kehadiran Anda</h2>
-            <p className="mt-4 text-sm text-soft-gray">
-              Silakan konfirmasi kehadiran Anda agar kami dapat menyiapkan hari yang sempurna.
-            </p>
-            <Link href="/rsvp" className="btn-primary mt-8">
-              Isi RSVP
-            </Link>
-          </div>
-        </FadeIn>
-      </section>
+      <RSVPSection />
     </main>
   )
 }
