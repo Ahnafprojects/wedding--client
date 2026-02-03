@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rose-gold: #b76e79;
+  --color-soft-gold: #c9a84c;
+  --color-off-white: #faf8f5;
+  --color-dark-charcoal: #2c2c2c;
+  --color-soft-gray: #7a7a7a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-off-white text-dark-charcoal;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+
+  .elegant-divider {
+    @apply my-8 flex items-center justify-center text-soft-gold text-2xl;
+  }
+
+  .card-elegant {
+    @apply rounded-2xl border border-soft-gold/20 bg-white/90 p-8 shadow-[0_20px_50px_rgba(0,0,0,0.08)];
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-rose-gold px-8 py-3 font-sans font-semibold text-white transition-all duration-300 hover:scale-[1.02] hover:bg-rose-gold/90;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-full border border-rose-gold/40 px-6 py-2 font-sans text-sm uppercase tracking-[0.2em] text-rose-gold transition-all duration-300 hover:bg-rose-gold/10;
+  }
+
+  .fade-on-view {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .fade-on-view.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .zoom-hover {
+    @apply transition-transform duration-500 hover:scale-[1.03];
+  }
+
+  /* Custom scrollbar */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: rgba(201, 168, 76, 0.3);
+    border-radius: 3px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: rgba(201, 168, 76, 0.5);
+  }
+}
