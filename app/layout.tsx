@@ -27,10 +27,10 @@ export const metadata: Metadata = {
     description: 'The Wedding of Bima Putra Eka Wardana & Andhira Lia Wahyu Sadida - Minggu, 8 Februari 2026',
     images: [
       {
-        url: '/a.JPG',
+        url: '/IMG_2767.JPG',
         width: 1200,
         height: 630,
-        alt: 'Bima & Rara Prewedding Photo',
+        alt: 'Bima & Rara Wedding',
       },
     ],
     type: 'website',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Bima & Rara Wedding',
     description: 'The Wedding of Bima Putra Eka Wardana & Andhira Lia Wahyu Sadida - Minggu, 8 Februari 2026',
-    images: ['/a.JPG'],
+    images: ['/IMG_2767.JPG'],
   },
 }
 
