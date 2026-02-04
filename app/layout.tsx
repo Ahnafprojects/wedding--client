@@ -18,6 +18,7 @@ const raleway = Raleway({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'),
   title: 'Bima & Rara Wedding',
   description: 'The Wedding of Bima Putra Eka Wardana & Andhira Lia Wahyu Sadida - Minggu, 8 Februari 2026',
   keywords: ['wedding', 'invitation', 'pernikahan', 'undangan'],
@@ -26,19 +27,20 @@ export const metadata: Metadata = {
     description: 'The Wedding of Bima Putra Eka Wardana & Andhira Lia Wahyu Sadida - Minggu, 8 Februari 2026',
     images: [
       {
-        url: '/IMG_2767.JPG',
+        url: '/a.JPG',
         width: 1200,
         height: 630,
         alt: 'Bima & Rara Prewedding Photo',
       },
     ],
     type: 'website',
+    locale: 'id_ID',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Bima & Rara Wedding',
     description: 'The Wedding of Bima Putra Eka Wardana & Andhira Lia Wahyu Sadida - Minggu, 8 Februari 2026',
-    images: ['/IMG_2767.JPG'],
+    images: ['/a.JPG'],
   },
 }
 
