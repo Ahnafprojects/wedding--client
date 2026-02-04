@@ -16,7 +16,7 @@ export default function RSVPPage() {
           <p className="text-xs uppercase tracking-[0.4em] text-soft-gray">RSVP</p>
           <h1 className="mt-4 font-playfair text-4xl text-dark-charcoal sm:text-5xl">Konfirmasi Kehadiran</h1>
           <p className="mt-4 text-sm text-soft-gray">
-            Minggu, 8 Februari 2026 · Bima &amp; Rara
+            12 Februari 2026 · Bima &amp; Rara
           </p>
         </div>
       </section>

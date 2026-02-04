@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
-const targetDate = new Date('2026-02-08T00:00:00+07:00')
+const targetDate = new Date('2026-02-12T11:00:00+07:00')
 
 const getTimeLeft = () => {
   const total = targetDate.getTime() - new Date().getTime()

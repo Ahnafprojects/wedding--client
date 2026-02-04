@@ -20,7 +20,7 @@ export default function HeroSection() {
           Bima <span className="text-soft-gold">✦</span> Rara
         </h1>
         <p className="mt-4 font-raleway text-base uppercase tracking-[0.3em] text-soft-gray">
-          8 Februari 2026
+          12 Februari 2026
         </p>
         <Link href="/invitation" className="btn-primary mt-10">
           Lihat Undangan

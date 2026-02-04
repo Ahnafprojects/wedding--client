@@ -24,7 +24,7 @@ export default function InvitationPage() {
           <h1 className="mt-4 font-playfair text-4xl text-dark-charcoal sm:text-5xl md:text-6xl">
             Bima <span className="text-soft-gold">✦</span> Rara
           </h1>
-          <p className="mt-4 text-sm uppercase tracking-[0.3em] text-soft-gray">Minggu, 8 Februari 2026</p>
+          <p className="mt-4 text-sm uppercase tracking-[0.3em] text-soft-gray">12 Februari 2026</p>
           <div className="mt-10">
             <a href="#rsvp" className="btn-primary">
               RSVP Sekarang
@@ -41,7 +41,7 @@ export default function InvitationPage() {
               Menuju Hari Bahagia
             </h2>
             <p className="mt-3 text-sm text-soft-gray">
-              Minggu, 8 Februari 2026 · Hotel Surya, Pare
+              Kamis, 12 Februari 2026 · Rumah Pak Dogles (Eko Juwanto)
             </p>
           </div>
           <div className="mt-10">

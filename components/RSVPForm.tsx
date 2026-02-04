@@ -65,23 +65,30 @@ export default function RSVPForm() {
                     name="name"
                     type="text"
                     required
-                    className="w-full rounded-full border border-gray-200 px-4 py-3 text-sm focus:border-rose-gold focus:outline-none"
+                    className="w-full rounded-xl border-2 border-gray-200 px-4 py-3.5 text-sm font-medium focus:border-soft-gold focus:ring-2 focus:ring-soft-gold/20 focus:outline-none transition-all"
                   />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm text-soft-gray" htmlFor="willAttend">
                     Konfirmasi Kehadiran
                   </label>
-                  <select
-                    id="willAttend"
-                    name="willAttend"
-                    className="w-full appearance-none rounded-full border border-gray-200 bg-white px-4 py-3 pr-10 text-sm focus:border-rose-gold focus:outline-none cursor-pointer bg-[url('data:image/svg+xml;charset=UTF-8,%3csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20stroke%3D%22%23999%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3cpath%20d%3D%22M6%208l4%204%204-4%22%2F%3E%3c%2Fsvg%3E')] bg-[length:1.25rem] bg-[right_0.75rem_center] bg-no-repeat"
-                    required
-                  >
-                    <option value="">Pilih...</option>
-                    <option value="yes">Hadir</option>
-                    <option value="no">Tidak Hadir</option>
-                  </select>
+                  <div className="relative">
+                    <select
+                      id="willAttend"
+                      name="willAttend"
+                      className="w-full appearance-none rounded-xl border-2 border-gray-200 bg-white px-4 py-3.5 pr-12 text-sm font-medium text-dark-charcoal focus:border-soft-gold focus:ring-2 focus:ring-soft-gold/20 focus:outline-none cursor-pointer transition-all"
+                      required
+                    >
+                      <option value="" className="text-gray-400">Pilih...</option>
+                      <option value="yes">✓ Hadir</option>
+                      <option value="no">✗ Tidak Hadir</option>
+                    </select>
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4">
+                      <svg className="h-5 w-5 text-soft-gold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm text-soft-gray" htmlFor="message">
@@ -91,7 +98,7 @@ export default function RSVPForm() {
                     id="message"
                     name="message"
                     rows={4}
-                    className="w-full rounded-2xl border border-gray-200 px-4 py-3 text-sm focus:border-rose-gold focus:outline-none"
+                    className="w-full rounded-xl border-2 border-gray-200 px-4 py-3.5 text-sm font-medium focus:border-soft-gold focus:ring-2 focus:ring-soft-gold/20 focus:outline-none transition-all resize-none"
                   />
                 </div>
                 <button 
