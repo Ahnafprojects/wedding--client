@@ -12,7 +12,7 @@ const locations = [
     venue: 'Rumah Pak Dogles (Eko Juwanto)',
     address: 'Dsn. Sidomulyo, Desa Medowo, Kec. Kandangan, Kab. Kediri',
     time: '11:00 - Selesai',
-    mapLink: 'https://www.google.com/maps?q=Dsn.+Sidomulyo,+Desa+Medowo,+Kec.+Kandangan,+Kab.+Kediri&output=embed',
+    mapLink: 'https://maps.app.goo.gl/ueXqaodb42QQdKRK9',
     directions: 'https://maps.app.goo.gl/ueXqaodb42QQdKRK9',
   },
 ]
@@ -101,14 +101,22 @@ export default function LocationMap() {
               </div>
               
               {/* Expandable Map */}
-              <div className="mt-4 overflow-hidden rounded-xl">
-                <iframe
-                  title={`Peta ${location.title}`}
-                  src={location.mapLink}
-                  className="h-48 w-full border-0 opacity-90 transition-opacity hover:opacity-100"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+              <div className="mt-4 overflow-hidden rounded-xl bg-gray-100">
+                <a
+                  href={location.directions}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block relative group"
+                >
+                  <div className="aspect-video w-full bg-gradient-to-br from-soft-gold/10 to-rose-gold/10 flex items-center justify-center">
+                    <div className="text-center">
+                      <MapPin className="h-12 w-12 text-soft-gold mx-auto mb-2" />
+                      <p className="text-sm font-medium text-dark-charcoal">Buka di Google Maps</p>
+                      <p className="text-xs text-soft-gray mt-1">Ketuk untuk navigasi</p>
+                    </div>
+                  </div>
+                  <div className="absolute inset-0 bg-soft-gold/0 group-hover:bg-soft-gold/5 transition-colors" />
+                </a>
               </div>
             </div>
           ))}
