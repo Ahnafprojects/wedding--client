@@ -5,15 +5,7 @@ import { MapPin, Clock, Copy, Check } from 'lucide-react'
 import { useState } from 'react'
 
 const locations = [
-  {
-    title: 'Akad Nikah',
-    date: 'Minggu, 8 Februari 2026',
-    venue: 'Hotel Surya, Pare',
-    address: 'Hotel Surya, Pare, Kediri',
-    time: '08:00 WIB',
-    mapLink: 'https://www.google.com/maps?q=Hotel%20Surya%20Pare&output=embed',
-    directions: 'https://www.google.com/maps?q=Hotel%20Surya%20Pare',
-  },
+  
   {
     title: 'Resepsi',
     date: 'Kamis, 12 Februari 2026',

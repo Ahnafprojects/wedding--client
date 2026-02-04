@@ -6,6 +6,8 @@ const photos = [
   { src: '/IMG_2765.JPG', alt: 'Momen pernikahan 2', rotate: false },
   { src: '/IMG_2771.JPG', alt: 'Momen pernikahan 3', rotate: false },
   { src: '/IMG_2775.JPG', alt: 'Momen pernikahan 4', rotate: false },
+  { src: '/IMG_2758.JPG', alt: 'Momen prewedding 5', rotate: false },
+  { src: '/IMG_2761.JPG', alt: 'Momen prewedding 6', rotate: false },
 ]
 
 export default function PhotoGallery() {
